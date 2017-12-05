@@ -7,15 +7,15 @@
 
 # test positional parameters
 
-# first, make sure $1 exists at all
+# first, make sure there's even an argument to be read
 if [ "$1" == "" ]; then
   echo "storycompile.sh"
   echo "Usage: ./storycompile.sh <directory>"
   echo "Please supply a directory."
-  exit 4 #clean exit technically but the script couldn't do anything.
+  exit 4 # clean exit technically but the script couldn't do anything.
 fi
 
-# goto directory and test for .storycompile
+# goto directory and test to make sure .storycompile exists
 # currently assuming that $1 is a proper directory, will do failsafe later
 cd $1
 if [ -e .storycompile ]; then
