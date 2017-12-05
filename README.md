@@ -13,10 +13,12 @@ Basic usage:
 
 storycompile requires a file called .storycompile to reside in the project directory, containing the relative paths of the files to be compiled. As an example, the file could look like this:
 
+```
   README.md
   chapter1/scene1.txt
   chapter1/scene2.txt
   chapter2/scene1.txt
+```
 
 It exports all files listed in .storycompile to a single file (called "compiled.txt" by default), separating each file with a divider (currently two hashes).
 
