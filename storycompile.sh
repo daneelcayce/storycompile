@@ -21,7 +21,6 @@ cd $1
 if [ -e .storycompile ]; then
   # create and clear file, then dump .storycompile's files in
   touch compiled.txt
-  mv compiled.txt compiled-stable.txt
   > compiled.txt
   while IFS= read -r line
   do
