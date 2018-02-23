@@ -25,7 +25,7 @@ if [ -e .storycompile ]; then
   while IFS= read -r line
   do
     cat $line >> compiled.txt
-    echo "###" >> compiled.txt
+    echo "===" >> compiled.txt
   done < .storycompile
   wc -w compiled.txt
 
